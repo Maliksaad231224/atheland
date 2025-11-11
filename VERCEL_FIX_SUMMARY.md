@@ -20,7 +20,11 @@ Added proper SPA routing configuration for Vercel:
       "dest": "/index.html",
       "status": 200
     }
-  ]
+  ],
+  "env": {
+    "VITE_SUPABASE_URL": "https://unlrrrhslnpqpuwaixqt.supabase.co",
+    "VITE_SUPABASE_PUBLISHABLE_KEY": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InVubHJycmhzbG5wcXB1d2FpeHF0Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjI3OTE2MjMsImV4cCI6MjA3ODM2NzYyM30.bLLBxcm-p5R2pEopz1Ph7JD38MO1RHFSHIgMwDIbSs"
+  }
 }
 ```
 **What it does:** Catches all requests except static files and serves `/index.html`, allowing React Router to handle routing.
