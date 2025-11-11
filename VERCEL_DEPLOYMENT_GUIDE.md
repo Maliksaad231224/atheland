@@ -5,7 +5,7 @@
 ### What We've Done ✅
 
 1. **Created `vercel.json`** - Configures Vercel to properly handle client-side routing for SPA
-2. **Created `public/_redirects`** - Fallback redirect rule for static hosting
+2. **Removed `public/_redirects`** - Avoids conflicts with `vercel.json`
 3. **Added `base: "/"` to vite.config.ts** - Ensures correct asset serving from root
 4. **Verified Build** - Production build passes with no errors (npm run build)
 
@@ -101,10 +101,8 @@ On Vercel Dashboard:
 }
 ```
 
-#### `public/_redirects` (NEW)
-```
-/* /index.html 200
-```
+#### `public/_redirects` (REMOVED)
+Removed to prevent conflicts with `vercel.json`.
 
 #### `vite.config.ts` (UPDATED)
 - Added `base: "/"` to ensure correct asset serving
