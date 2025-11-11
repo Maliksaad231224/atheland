@@ -19,6 +19,9 @@
 - This allows React Router to handle the route matching on the client side
 - Added `_redirects` file as additional fallback
 
+
+
+
 **How to Verify:**
 ```bash
 # Build locally and test
