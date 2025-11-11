@@ -94,10 +94,7 @@ On Vercel Dashboard:
       "status": 200
     }
   ],
-  "env": {
-    "VITE_SUPABASE_URL": "@VITE_SUPABASE_URL",
-    "VITE_SUPABASE_PUBLISHABLE_KEY": "@VITE_SUPABASE_PUBLISHABLE_KEY"
-  }
+  // Environment variables removed to avoid deployment errors
 }
 ```
 
